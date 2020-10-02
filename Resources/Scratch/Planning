@@ -1,0 +1,4 @@
+Risk calculation for dividends:
+    div/yield = given by downloading data
+    % chance of full return = number of times dividends were paid (as far back as possible) / number of dividend paying periods
+    risk factored div/yield = div/yield * % chance of full return

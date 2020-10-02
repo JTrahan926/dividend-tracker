@@ -1,0 +1,13 @@
+Ticker,Stocks_Owned
+AMC,20
+PING,1
+HRL,1
+AMD,2
+TMUS,1
+MSFT,2
+DIS,1
+BRK.B,1
+NTDOY,1
+NKE,1
+V,1
+LUV,1
