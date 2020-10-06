@@ -2,8 +2,8 @@ import dash
 import dash_core_components as dash_cc
 import dash_html_components as dash_html
 from dash.dependencies import Input, Output
-import Main.BL.DividendsBL as divBL
-import Main.GUI.GUICentral as gui
+import BL.DividendsBL as divBL
+import GUI.GUICentral as gui
 import plotly.graph_objs as go
 
 def build():

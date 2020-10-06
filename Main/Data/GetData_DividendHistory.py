@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import yfinance as yf
 import pandas as pd
 
@@ -6,12 +8,14 @@ import pandas as pd
 """
 
 def main():
-    dividendStocks = pd.read_csv(r'C:\Users\Jaden\PycharmProjects\PortfolioUpkeep\Resources\dividendPortfolioData.csv')['Ticker']
+    dividendStocks = pd.read_csv('../../Resources/dividendPortfolioData.csv')['Ticker']
 
     for ticker in dividendStocks:
+    	print('Downloading Dividend History for {}'.format(ticker))
         dividends_ser = yf.Ticker(ticker).dividends
         dividends_df = pd.Series.to_frame(dividends_ser)
-        dividends_df.to_csv(r'C:\Users\Jaden\PycharmProjects\PortfolioUpkeep\OutputFiles\Dividends\{}_dividends.csv'.format(ticker))
+        dividends_df.to_csv('../../Resources/OutputFiles/Dividends/{}_dividends.csv'.format(ticker))
+    	print('Finished Downloading Dividend History for {} to {}'.format(ticker,ticker+'_dividends.csv'))
     return
 
 if __name__ == '__main__':
