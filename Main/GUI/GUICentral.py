@@ -14,3 +14,5 @@ class Colors:
     BAD_RED = '#DA4728'
     GOOD_GREEN = '#28DA6B'
     ORANGE = '#FF5733'
+    MAROON = '#4B2B31'
+    LIGHTER_MAROON = '#6F3637'
